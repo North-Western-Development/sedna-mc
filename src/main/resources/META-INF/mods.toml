@@ -7,7 +7,7 @@ modId = "sedna"
 version = "${file.jarVersion}"
 displayName = "Sedna for Minecraft"
 logoFile = "logo.png"
-authors = "Sangar"
+authors = "Sangar, Un1q32"
 description = '''
 RISC-V Virtual Machine and binary images for computer mods.
 
