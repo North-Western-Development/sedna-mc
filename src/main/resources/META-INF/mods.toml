@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[40,)"
+loaderVersion = "[47,)"
 license = "MIT"
 
 [[mods]]
@@ -11,9 +11,9 @@ authors = "Sangar"
 description = '''
 RISC-V Virtual Machine and binary images for computer mods.
 
-This mod contains a Linux distribution built from the "sedna" branch of the following repository:
+This mod contains a Linux distribution built from the following repository:
 
-  https://github.com/fnuecke/buildroot
+  https://github.com/Un1q32/buildroot
 
 The licenses for the embedded software are embedded in the JAR file containing this mod, inside the "licenses" directory.
 '''
@@ -21,15 +21,12 @@ The licenses for the embedded software are embedded in the JAR file containing t
 [[dependencies.oc2-sedna]]
 modId = "forge"
 mandatory = true
-versionRange = "[40.1.0,)"
+versionRange = "[47.3.0,)"
 ordering = "NONE"
 side = "BOTH"
 [[dependencies.oc2-sedna]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.18.2,1.19)"
+versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "BOTH"
-
-[mc-publish]
-curseforge = 511276
