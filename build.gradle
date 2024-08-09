@@ -38,7 +38,7 @@ repositories {
     mavenCentral()
     final def GithubPackages = [
         ["fnuecke/ceres", "li.cil.ceres"],
-        ["fnuecke/sedna", "li.cil.sedna"],
+        ["Un1q32/sedna", "li.cil.sedna"],
         ["Un1q32/buildroot", "li.cil.sedna"]
     ]
     GithubPackages.each { final repo, final group ->
@@ -57,8 +57,8 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     implementation('li.cil.ceres:ceres:0.0.4') { transitive = false }
-    implementation('li.cil.sedna:sedna:2.0.9') { transitive = false }
-    implementation('li.cil.sedna:buildroot:0.0.12') { transitive = false }
+    implementation('li.cil.sedna:sedna:2.0.11') { transitive = false }
+    implementation('li.cil.sedna:sedna-buildroot:0.0.9') { transitive = false }
 }
 
 minecraft {
@@ -87,7 +87,7 @@ shadowJar {
     dependencies {
         include(dependency('li.cil.ceres:ceres:.*'))
         include(dependency('li.cil.sedna:sedna:.*'))
-        include(dependency('li.cil.sedna:buildroot:.*'))
+        include(dependency('li.cil.sedna:sedna-buildroot:.*'))
     }
 
     archiveClassifier.set('')
