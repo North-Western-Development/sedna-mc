@@ -38,8 +38,8 @@ repositories {
     mavenCentral()
     final def GithubPackages = [
         ["fnuecke/ceres", "li.cil.ceres"],
-        ["Un1q32/sedna", "li.cil.sedna"],
-        ["Un1q32/buildroot", "li.cil.sedna"]
+        ["North-Western-Development/sedna", "li.cil.sedna"],
+        ["North-Western-Development/buildroot", "li.cil.sedna"]
     ]
     GithubPackages.each { final repo, final group ->
         maven {
