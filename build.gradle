@@ -45,8 +45,8 @@ repositories {
         maven {
             url = uri("https://maven.pkg.github.com/${repo}")
             credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("GPR_USER")
-                password = project.findProperty("gpr.key") ?: System.getenv("GPR_KEY")
+                username = project.findProperty("gpr.user") ?: System.getenv("GUTHUB_ACTOR")
+                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
             }
             content { includeGroup group }
         }
