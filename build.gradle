@@ -39,7 +39,7 @@ repositories {
     final def GithubPackages = [
         ["fnuecke/ceres", "li.cil.ceres"],
         ["North-Western-Development/sedna", "li.cil.sedna"],
-        ["North-Western-Development/buildroot", "li.cil.sedna"]
+        ["North-Western-Development/minux", "li.cil.sedna"]
     ]
     GithubPackages.each { final repo, final group ->
         maven {
